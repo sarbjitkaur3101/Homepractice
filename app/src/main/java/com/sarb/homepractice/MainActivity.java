@@ -129,6 +129,17 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        curuser=auth.getCurrentUser();
+        if (curuser!=null){
+            Toast.makeText(this, "user already login ", Toast.LENGTH_LONG).show();
+            Intent s= new Intent(getApplicationContext(),HomeActivity.class);
+            startActivity(s);
+        }
+    }
+
     private void Savedata() {
         Map<String, String> user = new HashMap<>();
         user.put("Email", uemail);

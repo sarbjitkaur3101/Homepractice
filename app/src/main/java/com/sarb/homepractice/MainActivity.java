@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                                     e.printStackTrace();
                                 }
                                 Toast.makeText(getApplicationContext(), " user not created", Toast.LENGTH_LONG).show();
-
+                                Log.d("Main","Err="+task.getException());
                             }
 
                         }
@@ -147,10 +147,12 @@ public class MainActivity extends AppCompatActivity {
         user.put("Mobile no", umobile);
         curuser = auth.getCurrentUser();
         db.collection(" Users").document(curuser.getUid())
-                .set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                .set(user).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
-            public void onSuccess(Void aVoid) {
-                Toast.makeText(MainActivity.this, "Data Saved", Toast.LENGTH_SHORT).show();
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()){
+                    Toast.makeText(MainActivity.this, "Data Saved", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

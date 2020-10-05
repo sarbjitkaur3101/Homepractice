@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "771397126668",
-    "firebase_url": "https://homepractice-3e639.firebaseio.com",
-    "project_id": "homepractice-3e639",
-    "storage_bucket": "homepractice-3e639.appspot.com"
+    "project_number": "892516265014",
+    "firebase_url": "https://homepractice-4a58a.firebaseio.com",
+    "project_id": "homepractice-4a58a",
+    "storage_bucket": "homepractice-4a58a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:771397126668:android:46b835ebc484cc48003c29",
+        "mobilesdk_app_id": "1:892516265014:android:1bf7c26b9387485cbcfc97",
         "android_client_info": {
           "package_name": "com.sarb.homepractice"
         }
       },
       "oauth_client": [
         {
-          "client_id": "771397126668-mpin7top34u81r0133fap0lj1heun4dm.apps.googleusercontent.com",
+          "client_id": "892516265014-j8oks6smfsrere3p77arlagqplv888j6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAQOHX46Iv9osSfBeZnGWqBkWGgsnkU8FY"
+          "current_key": "AIzaSyBbb8Ou9K3sTsIfrUOlmdRlKvnKmQ0Rkj8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "771397126668-mpin7top34u81r0133fap0lj1heun4dm.apps.googleusercontent.com",
+              "client_id": "892516265014-j8oks6smfsrere3p77arlagqplv888j6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
